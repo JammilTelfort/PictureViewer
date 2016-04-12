@@ -1,0 +1,30 @@
+body{
+	background-image: url("../images/background.jpg");
+	text-align: center;
+
+	font-family: 'Indie Flower', cursive;
+	color: #ffff80;
+}
+
+h1{
+	font-size: 50pt;
+	margin-bottom: 0;
+}
+
+h2{
+	margin-top: 0%;
+}
+
+img{
+	width: 50%;
+	height: 50%;
+}
+
+h4{
+	font-size: 120%;
+}
+
+h5{
+	font-size: 25pt;
+	color: #29a329;
+}
