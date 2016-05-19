@@ -1,8 +1,6 @@
 body{
-	background-image: url("http://www.surfshackradio.com/wp-content/flagallery/home/tropical-palm-beach-hd-wallpaper.jpg");
-	background-repeat: no-repeat;
+	background-image: url("../images/background.jpg");
 	text-align: center;
-	background-size: cover;
 
 	font-family: 'Indie Flower', cursive;
 	color: #ffff80;
@@ -30,4 +28,3 @@ h5{
 	font-size: 25pt;
 	color: #29a329;
 }
-
