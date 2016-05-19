@@ -1,5 +1,4 @@
 
-alert("Have a nice day!");
 
 var picList = new Array(11);
 var locationData = new Array(11);
@@ -15,7 +14,7 @@ var bButtonListener;
 
 picList[0] = "images/airport.png";
 picList[1] = "images/beach.jpg";
-picList[2] = "images/caroline.png";
+picList[2] = "images/caroline.jpg";
 picList[3] = "images/cave.JPG";
 picList[4] = "images/frank.jpeg";
 picList[5] = "images/iguana.jpg";
@@ -23,7 +22,7 @@ picList[6] = "images/lohmother.jpg";
 picList[7] = "images/marshmallow.jpeg";
 picList[8] = "images/sleepover.jpeg";
 picList[9] = "images/snorkel.jpg";
-picList[10] = "images/blainepose.jpg";
+picList[10] = "images/blainepose.jpeg";
 
 locationData[0] = "Belize City, Belize";
 locationData[1] = "South Water Caye, Belize";
@@ -37,7 +36,7 @@ locationData[8] = "South Water Caye, Belize";
 locationData[9] = "South Water Caye, Belize";
 locationData[10] = "South Water Caye, Belize";
 
-captionData[0) = "Post Harry Watt, Pre 5 Hour Bus Ride";
+captionData[0] = "Post Harry Watt, Pre 5 Hour Bus Ride";
 captionData[1] = "The water is so blue";
 captionData[2] = "No you cannot carry my bag";
 captionData[3] = "Scariest part of the whole trip";
@@ -50,11 +49,7 @@ captionData[9] = "Oh look an Osprey";
 captionData[10] = "Blaine Pose";
 
 window.onload = function(){	
-	alert("Hey!");
-	alert("Enjoy the pics!");
-
-
-	document.getElementById("picView").src = imagePicData[whichPic];
+	document.getElementById("picView").src = picList[whichPic];
 	document.getElementById("location").innerHTML = locationData[whichPic];
 	document.getElementById("captionLoc").innerHTML = captionData[whichPic];
 
@@ -65,11 +60,11 @@ window.onload = function(){
 	fButtonListener.addEventListener('click', function(event){
 
 		++whichPic;
-		if (whichPic >= imagePicData.length) {
+		if (whichPic >= picList.length) {
 			whichPic = 0;
 		}
 		document.getElementById("location").innerHTML = locationData[whichPic];
-		document.getElementById("picView").src = imagePicData[whichPic];
+		document.getElementById("picView").src = picList[whichPic];
 		document.getElementById("captionLoc").innerHTML = captionData[whichPic];
 
 
@@ -80,10 +75,10 @@ window.onload = function(){
 	bButtonListener.addEventListener('click', function(event){
 		--whichPic;
 		if (whichPic < 0) {
-			whichPic = imagePicData.length - 1;
+			whichPic = picList.length - 1;
 		}
 		document.getElementById("location").innerHTML = locationData[whichPic];
-		document.getElementById("picView").src = imagePicData[whichPic];
+		document.getElementById("picView").src = picList[whichPic];
 		document.getElementById("captionLoc").innerHTML = captionData[whichPic];
 
 
@@ -91,6 +86,4 @@ window.onload = function(){
 	});
 	
 
-
-};
-
+}
