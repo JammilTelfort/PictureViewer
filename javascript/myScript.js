@@ -1,8 +1,8 @@
 
 
-var picList = new Array(11);
-var locationData = new Array(11);
-var captionData = new Array(11);
+var picList = new Array(19);
+var locationData = new Array(19);
+var captionData = new Array(19);
 var whichPic = 0;
 
 var fButtonListener;
@@ -23,6 +23,14 @@ picList[7] = "images/marshmallow.jpeg";
 picList[8] = "images/sleepover.jpeg";
 picList[9] = "images/snorkel.jpg";
 picList[10] = "images/blainepose.jpeg";
+picList[11] = "images/dale.jpeg";
+picList[12] = "images/scared.png";
+picList[13] = "images/feet.jpg";
+picList[14] = "images/idpose.jpeg";
+picList[15] = "images/junior.jpeg";
+picList[16] = "images/junior2.jpg";
+picList[17] = "images/rodney.jpg";
+picList[18] = "images/fam.jpeg";
 
 locationData[0] = "Belize City, Belize";
 locationData[1] = "South Water Caye, Belize";
@@ -35,6 +43,14 @@ locationData[7] = "South Water Caye, Belize";
 locationData[8] = "South Water Caye, Belize";
 locationData[9] = "South Water Caye, Belize";
 locationData[10] = "South Water Caye, Belize";
+locationData[11] = "South Water Caye, Belize";
+locationData[12] = "Blue Creek, Toledo, Belize";
+locationData[13] = "Blue Creek, Toledo, Belize";
+locationData[14] = "South Water Caye, Belize";
+locationData[15] = "South Water Caye, Belize";
+locationData[16] = "South Water Caye, Belize";
+locationData[17] = "????????????????????????";
+locationData[18] = "South Water Caye, Belize";
 
 captionData[0] = "Post Harry Watt, Pre 5 Hour Bus Ride";
 captionData[1] = "The water is so blue";
@@ -47,6 +63,14 @@ captionData[7] = "I feel like I've sinned";
 captionData[8] = "Guys I had a really weird dream someone was in my bed";
 captionData[9] = "Oh look an Osprey";
 captionData[10] = "Blaine Pose";
+captionData[11] = "My island awaits Krazy Katie";
+captionData[12] = "*Shivers Uncontrollably*";
+captionData[13] = "One, Two, Three, to the Fo'; Amanda Doggy Dog Got the Tivas on Her Toes";
+captionData[14] = "Alan: I hope I can find an osprey in Jamal's hair";
+captionData[15] = "Heh Heh, I Kiss Ha Before Da Night Is Ova";
+captionData[16] = "Heh Heh, You Cool?";
+captionData[17] = "I Was Once Stopped and Almost Arrest At This Embassy";
+captionData[18] = "Thanks For the Amazing Memories";
 
 window.onload = function(){	
 	document.getElementById("picView").src = picList[whichPic];
